@@ -40,8 +40,7 @@ public class TestBPlusNode {
     // 1 seconds max per method tested.
     @Rule
     public TestRule globalTimeout = new DisableOnDebug(Timeout.millis((long) (
-                1000 * TimeoutScaling.factor)));
-
+            1000 * TimeoutScaling.factor)));
     @Before
     public void setup() {
         DiskSpaceManager diskSpaceManager = new MemoryDiskSpaceManager();
